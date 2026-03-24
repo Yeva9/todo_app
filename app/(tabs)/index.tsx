@@ -1,28 +1,25 @@
-import useTheme, { ColorScheme } from "@/hooks/useTheme";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { createHomeStyles } from "@/assets/images/styles/home.styles";
+import useTheme from "@/hooks/useTheme";
+import { LinearGradient } from "expo-linear-gradient";
+import { StatusBar, Text, TouchableOpacity } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   const { toggleMode, colors } = useTheme();
-  const styles = createStyles(colors);
-  
-  return (
-    <View style={styles.container}>
-      <Text>Hello, Expo!</Text>
-      <TouchableOpacity onPress={toggleMode}>
-        <Text>Toggle The Mode</Text>
-      </TouchableOpacity>
-    </View>
-  );
-}
+  const homeStyles = createHomeStyles(colors);
 
-const createStyles = (colors: ColorScheme) => {
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: colors.bg,
-    },
-  });
-return styles;
+  return (
+    <LinearGradient
+      colors={colors.gradients.background}
+      style={homeStyles.container}
+    >
+      <StatusBar barStyle={colors.statusBarStyle} />
+      <SafeAreaView style={homeStyles.safeArea}>
+        <Text>Hello, Expo!</Text>
+        <TouchableOpacity onPress={toggleMode}>
+          <Text>Toggle The Mode</Text>
+        </TouchableOpacity>
+      </SafeAreaView>
+    </LinearGradient>
+  );
 }
