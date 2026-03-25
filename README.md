@@ -4,6 +4,24 @@ A modern cross-platform Todo app built with **React Native**, **Expo**, and **Co
 
 This project includes real-time todo updates, dark/light theme support, edit, delete, and toggle (mark as done/undone) actions.
 
+## Screenshots
+<!-- Dark -->
+<p>
+  <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/89e0f24a-24a7-4c35-85e5-fd0b85bf1652" />
+  <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/81e0e29d-621d-42e6-8b7d-76019f287eb7" />
+  <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/a6c2d4a8-2f8c-43d5-b8b6-287df9a97567" />
+  <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/d79f03f8-9b2c-46c9-ac01-1831a80a06ac" />
+<p>
+  
+<!-- Light -->
+<p>
+  <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/ce26d35c-9b14-4e17-8348-b27f1c411039" />
+  <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/f8a34d92-2f9f-4670-bb2b-9f3f28503612" />
+  <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/304d79f9-8ed9-4754-8dcc-653fd2b22ffc" />
+  <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/4e1bc75b-f6bc-4468-b113-e1125c07597e" />
+<p>
+
+
 ## Features
 
 - Add new todos
