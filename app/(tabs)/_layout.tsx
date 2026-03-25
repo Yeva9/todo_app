@@ -29,7 +29,7 @@ const TabsLayout = () => {
         name="index"
         options={{
           title: "Todos", // TODO: use from constants
-          tabBarIcon: ({ color, size }) => <Ionicons name="flash-outline" size={size} color={color} /> ,
+          tabBarIcon: ({ color, size }) => <Ionicons name="flash-outline" size={size} color={color} />,
         }}
       />
       <Tabs.Screen
