@@ -1,50 +1,147 @@
-# Welcome to your Expo app 👋
+# Todo App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern cross-platform Todo app built with **React Native**, **Expo**, and **Convex**.
 
-## Get started
+This project includes real-time todo updates, dark/light theme support, edit, delete, and toggle (mark as done/undone) actions.
 
-1. Install dependencies
+## Features
 
-   ```bash
-   npm install
-   ```
+- Add new todos
+- Mark todos as completed or active
+- Edit existing todos
+- Delete individual todos with confirmation
+- Delete all todos from settings
+- Dark mode / light mode with persisted preference
+- Statistics screen for total, completed, and active todos
 
-2. Start the app
+## Tech Stack
 
-   ```bash
-   npx expo start
-   ```
+- **React Native**
+- **Expo**
+- **TypeScript**
+- **Expo Router**
+- **Convex**
+- **Async Storage**
+- **Expo Linear Gradient**
+- **Expo Vector Icons**
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Project Structure
 
 ```bash
-npm run reset-project
+app/
+  (tabs)/
+    index.tsx
+    settings.tsx
+    _layout.tsx
+  _layout.tsx
+
+components/
+hooks/
+assets/
+convex/
+types/
+````
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone <repo-url>
+cd todo_app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3. Set up Convex
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Install Convex if needed:
 
-## Join the community
+```bash
+npm install convex
+```
 
-Join our community of developers creating universal apps.
+Then start Convex development:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx convex dev
+```
+
+This will connect your app to a Convex project and generate the required local environment config for development. 
+
+### 4. Start the Expo app
+
+```bash
+npx expo start
+```
+
+You can then run the app in one of these ways:
+
+* Scan the QR code with **Expo Go** (app)
+* Press **i** for iOS simulator
+* Press **a** for Android emulator
+* Press **w** for web, if enabled
+
+## Available Functionality
+
+### Todos Screen
+
+On the main screen, users can:
+
+* View all todos
+* Toggle completion state
+* Edit todo text
+* Save or cancel edits
+* Delete a todo with confirmation
+
+### Settings Screen
+
+The settings tab includes:
+
+* Todo statistics
+* Theme preference switching
+* Danger zone actions like deleting all todos
+
+## Theme Support
+
+This app supports both **light mode** and **dark mode**.
+
+The selected theme is persisted locally, so the app remembers the user’s preference even after closing and reopening it. This behavior is implemented through a custom `useTheme` hook and Async Storage. 
+
+## Real-Time Backend
+
+This project uses **Convex** as the backend.
+
+Convex handles:
+
+* querying todos
+* adding todos
+* updating todos
+* toggling completion
+* deleting a single todo
+* clearing all todos
+
+Because Convex is real-time, updates appear immediately without manual refresh.  
+
+## Scripts
+
+Common commands:
+
+```bash
+npm install
+npx convex dev
+npx expo start
+```
+
+## Notes
+
+* Make sure your phone and laptop are on the same Wi-Fi network when testing with Expo Go. 
+* If you are using simulators:
+
+  * iOS usually requires Xcode on macOS
+  * Android emulator typically uses Android Studio 
+* This project uses TypeScript and a modular structure for easier scaling.
