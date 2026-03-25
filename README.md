@@ -5,6 +5,7 @@ A modern cross-platform Todo app built with **React Native**, **Expo**, and **Co
 This project includes real-time todo updates, dark/light theme support, edit, delete, and toggle (mark as done/undone) actions.
 
 ## Screenshots
+
 <!-- Dark -->
 <p>
   <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/89e0f24a-24a7-4c35-85e5-fd0b85bf1652" />
@@ -20,7 +21,6 @@ This project includes real-time todo updates, dark/light theme support, edit, de
   <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/304d79f9-8ed9-4754-8dcc-653fd2b22ffc" />
   <img width="212" height="458" alt="image" src="https://github.com/user-attachments/assets/4e1bc75b-f6bc-4468-b113-e1125c07597e" />
 <p>
-
 
 ## Features
 
@@ -58,7 +58,7 @@ hooks/
 assets/
 convex/
 types/
-````
+```
 
 ## Getting Started
 
@@ -89,7 +89,7 @@ Then start Convex development:
 npx convex dev
 ```
 
-This will connect your app to a Convex project and generate the required local environment config for development. 
+This will connect your app to a Convex project and generate the required local environment config for development.
 
 ### 4. Start the Expo app
 
@@ -99,10 +99,10 @@ npx expo start
 
 You can then run the app in one of these ways:
 
-* Scan the QR code with **Expo Go** (app)
-* Press **i** for iOS simulator
-* Press **a** for Android emulator
-* Press **w** for web, if enabled
+- Scan the QR code with **Expo Go** (app)
+- Press **i** for iOS simulator
+- Press **a** for Android emulator
+- Press **w** for web, if enabled
 
 ## Available Functionality
 
@@ -110,25 +110,25 @@ You can then run the app in one of these ways:
 
 On the main screen, users can:
 
-* View all todos
-* Toggle completion state
-* Edit todo text
-* Save or cancel edits
-* Delete a todo with confirmation
+- View all todos
+- Toggle completion state
+- Edit todo text
+- Save or cancel edits
+- Delete a todo with confirmation
 
 ### Settings Screen
 
 The settings tab includes:
 
-* Todo statistics
-* Theme preference switching
-* Danger zone actions like deleting all todos
+- Todo statistics
+- Theme preference switching
+- Danger zone actions like deleting all todos
 
 ## Theme Support
 
 This app supports both **light mode** and **dark mode**.
 
-The selected theme is persisted locally, so the app remembers the user’s preference even after closing and reopening it. This behavior is implemented through a custom `useTheme` hook and Async Storage. 
+The selected theme is persisted locally, so the app remembers the user’s preference even after closing and reopening it. This behavior is implemented through a custom `useTheme` hook and Async Storage.
 
 ## Real-Time Backend
 
@@ -136,14 +136,14 @@ This project uses **Convex** as the backend.
 
 Convex handles:
 
-* querying todos
-* adding todos
-* updating todos
-* toggling completion
-* deleting a single todo
-* clearing all todos
+- querying todos
+- adding todos
+- updating todos
+- toggling completion
+- deleting a single todo
+- clearing all todos
 
-Because Convex is real-time, updates appear immediately without manual refresh.  
+Because Convex is real-time, updates appear immediately without manual refresh.
 
 ## Scripts
 
@@ -157,9 +157,9 @@ npx expo start
 
 ## Notes
 
-* Make sure your phone and laptop are on the same Wi-Fi network when testing with Expo Go. 
-* If you are using simulators:
+- Make sure your phone and laptop are on the same Wi-Fi network when testing with Expo Go.
+- If you are using simulators:
+  - iOS usually requires Xcode on macOS
+  - Android emulator typically uses Android Studio
 
-  * iOS usually requires Xcode on macOS
-  * Android emulator typically uses Android Studio 
-* This project uses TypeScript and a modular structure for easier scaling.
+- This project uses TypeScript and a modular structure for easier scaling.
