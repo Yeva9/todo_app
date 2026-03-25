@@ -1,8 +1,8 @@
 import { createHomeStyles } from "@/assets/styles/home.styles";
-import EmptyState from "@/components/EmptyState";
-import Header from "@/components/Header";
-import LoadingSpinner from "@/components/LoadingSpinner";
-import TodoInput from "@/components/TodoInput";
+import EmptyState from "@/components/home/EmptyState";
+import Header from "@/components/home/Header";
+import LoadingSpinner from "@/components/home/LoadingSpinner";
+import TodoInput from "@/components/home/TodoInput";
 import { api } from "@/convex/_generated/api";
 import useTheme from "@/hooks/useTheme";
 import { Todo, TodoId } from "@/types/todo";
@@ -131,7 +131,7 @@ export default function Index() {
             <Ionicons name="trash" size={14} color="#fff" />
           </LinearGradient>
         </TouchableOpacity>
-        
+
       </View>
     </View>
 
