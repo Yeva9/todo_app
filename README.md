@@ -163,5 +163,3 @@ npx expo start
   - Android emulator typically uses Android Studio
 
 - This project uses TypeScript and a modular structure for easier scaling.
-
-# todo_app
